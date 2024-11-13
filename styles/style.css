@@ -77,12 +77,12 @@
   margin-top: 124px;
 }
   /* IMAGE  */
-.image-box_hero {
+.hero__image-box {
   width: 610px;
   height: 836px;
 }
 
-.image-box__image {
+.image-box-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -114,14 +114,14 @@
   justify-content: space-between;
 }
 
-.quote {
+.blockquote-section__quote {
   font-size: 34px;
   font-weight: 600;
   line-height: 44px;
   letter-spacing: -0.5px;
 }
 
-.qoute-author {
+.blockquote-section__quote-author {
   font-size: 20px;
   font-weight: 500;
   line-height: 32px;
@@ -129,7 +129,7 @@
   margin-bottom: 7px;
 }
 
-.profession {
+.blockquote-section__author-profession {
   font-size: 16px;
   line-height: 28px;
   opacity: 70%;
@@ -137,7 +137,7 @@
 }
 
 /* image  */
-.image-box_quote {
+.blackquote-section__image-box {
   min-width: 650px;
   height: 460px;
 }
