@@ -18,25 +18,29 @@
     </heder>
     <main>
 
+
         <!-- HERO  -->
         <section class="hero">
             <div class="hero__content">
-                <h1 class="hero__title">Шоссе, ТТ <br>и Грэвел
+                <h1 class="section__title">Шоссе, ТТ <br>и Грэвел
                 </h1>
-                <p class="hero__text">Триатлонные старты, горные серпантины или грейвел 
+                <p class="section__text">Триатлонные старты, горные серпантины или грейвел 
                     заезды по живописным маршрутам – нужно только определиться 
                     с выбором велосипеда и отправиться в путь.
                 </p>
                 <a href="#" class="more-detailed-button">Подробнее</a>
-                <a href="#" class="product-link">Cannondale Systemsix</a>
+                <a href="#" class="product-link_hero">Cannondale Systemsix</a>
             </div>
             <div class="hero__image-box">
                 <img  class="image-box-image"
                         src="./images/hero-cover.jpg"
                         alt="велосипедист едет по дороге сквозь хвойный лес">
-                <article  class="product-card  product-card_hero"></article>
+                <!-- <article  class="product-card  product-card_hero">
+
+                </article> -->
             </div>
         </section>
+
 
         <!-- BLACKQOUTE -->
         <section class="blockquote-section">
@@ -55,6 +59,140 @@
                         class="image-box-image">
             </div>
         </section>
+
+
+        <!-- COVERINGS -->
+        <section class="coverings">
+            <ul class="slides-list">
+                <!-- 1 -->
+                <input type="radio" name="radio-btn" id="highway" checked>
+                <li class="slide-container">
+                    <div class="slide">
+                        <div class="slide__content">
+                            <h2 class="section__title">Шоссе</h2>
+                            <p class="section__text  slider_text">На шоссейном велосипеде можно ездить по асфальту 
+                                на разных градиентах: будь то горы или равнины. 
+                                Гонки проходят в командном пелотоне, но тренироваться можно и 
+                                самостоятельно.
+                            </p>
+                        </div>
+                        <div class="slide__image-box">
+                            <img src="./images/highway-img__1.jpg" alt="" class="slide__image">
+                            <img src="./images/highway-img__2.jpg" alt="" class="slide__image">
+                            <div class="nav">
+                                <label for="tt" class="prev"><img src="/images/nav-arrow.svg"  class="nav-btn_prev" alt=""></label>
+                                <label for="gravel" class="next"><img src="/images/nav-arrow.svg"  class="nav-btn_prev  nav-btn_next" alt=""></label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 2 -->
+                <input type="radio" name="radio-btn" id="gravel">
+                <li class="slide-container">
+                    <div class="slide">
+                        <div class="slide__content">
+                            <h2 class="section__title">Грэвел</h2>
+                        <p class="section__text  slider_text">Грэвел похож на шоссейный велосипед, 
+                            но конструкция рамы немного отличается, и на нём стоят 
+                            более широкие покрышки, всё для того чтобы проехать по 
+                            лёгкому бездорожью.
+                        </p>
+                        </div>
+                        <div class="slide__image-box">
+                            <img src="./images/grvl-img__1.jpg" alt="" class="slide__image">
+                            <img src="./images/grvl-img__2.jpg" alt="" class="slide__image">
+                            <div class="nav">
+                                <label  for="highway"  class="prev"><img  src="/images/nav-arrow.svg"  class="nav-btn_prev"  alt=""></label>
+                                <label for="tt" class="next"><img src="/images/nav-arrow.svg"  class="nav-btn_prev  nav-btn_next" alt=""></label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 3 -->
+                <input type="radio" name="radio-btn" id="tt" />
+                <li class="slide-container">
+                    <div class="slide">
+                        <div class="slide__content">
+                            <h2 class="section__title">ТТ</h2>
+                        <p class="section__text  slider_text">ТТ — это велосипед для триатлона или 
+                            раздельного старта, гооняют на таком велике только по 
+                            равнинному асфальту, велик очень быстрые и аэродинамичный.
+                        </p>
+                        </div>
+                        <div class="slide__image-box">
+                            <img src="./images/TT-img__1.jpg" alt="" class="slide__image">
+                            <img src="./images/TT-img__2.jpg" alt="" class="slide__image">
+                            <div class="nav">
+                                <label for="gravel" class="prev"><img src="/images/nav-arrow.svg"  class="nav-btn_prev" alt=""></label>
+                                <label for="highway" class="next"><img src="/images/nav-arrow.svg"  class="nav-btn_prev  nav-btn_next" alt=""></label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- BIKES -->
+        <section class="bikes">
+            <div class="bikes__header">
+                <h2 class="section__title">Велосипеды</h2>
+                <div class="category-box">
+                    <input type="checkbox" name="heighway"  id="c1" checked>
+                    <input type="checkbox" name="gravel"  id="c2">
+                    <input type="checkbox" name="tt"  id="c3">
+        
+                    <label for="c1"  class="category">Шоссе</label>
+                    <label for="c2"  class="category">Грэвел</label>
+                    <label for="c3"  class="category">ТТ</label>
+                </div>
+            </div>
+            
+            
+            
+
+
+       
+            
+             
+
+
+
+
+
+
+                <ul class="product-list">
+                    <li>
+                        <a  class="product-link" href="">
+                            <div class="product-card">
+                                <img src="./images/HGWCervelo Caledonia-5.png" alt="" class="product-image">
+                            </div>
+                            <p  class="product-name">Cervelo Caledonia-5</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a  class="product-link" href="">
+                            <div class="product-card">
+                                <img src="./images/HGWCannondale Systemsix Himod.png" alt="" class="product-image">
+                            </div>
+                            <p  class="product-name">Cannondale Systemsix Himod</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a  class="product-link" href="">
+                            <div class="product-card">
+                                <img src="./images/HGWTrek Domane SL-7.png" alt="" class="product-image">
+                            </div>
+                            <p  class="product-name">Trek Domane SL-7</p>
+                        </a>
+                    </li>
+                </ul>
+
+
+
+
+        </section>
+
     </main>
 </body>
 </html>
