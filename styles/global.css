@@ -13,12 +13,13 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    max-width: 1440px;
+    width: 1440px;
     margin: 0 auto;
 
     background-color: #F4F4F4;
     padding-bottom: 200px;
 }
+
 ul {
     list-style-type: none;
 }

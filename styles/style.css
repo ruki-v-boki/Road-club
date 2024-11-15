@@ -48,7 +48,6 @@
 }
 
 .section__text {
-  /* margin-bottom: 10px; */
   opacity: 70%;
   line-height: 28px;
 }
@@ -57,6 +56,7 @@
   display: flex;
   justify-content: center;
   width: 180px;
+  margin-top: 10px;
   border-radius: 4px;
   padding: 16px 10px;
   color: #fff;
@@ -66,7 +66,6 @@
   letter-spacing: 1px;
   text-decoration: none;
   background-color: #24B47E;
-  margin-top: 10px;
 }
 
 .product-link_hero {
@@ -140,8 +139,8 @@
 
                 /* COVERINGS */
 .coverings {
-  padding-left: 120px;
   min-height: 922px;
+  padding-left: 120px;
 }
 
                 /* ul */
@@ -180,16 +179,35 @@ input:checked + .slide-container .nav label {
   margin-top: -6px;
 }
 
+              /* image */
 .slide__image-box {
+  position: relative;
   display: flex;
   gap: 40px;
   margin-top: 83px;
-  position: relative;
 }
 
 .slide__image {
   width: 650px;
   height: 400px;
+}
+
+              /* tag */
+.image-tag-box {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  background-image: url(/images/tag-box.svg);
+  background-repeat: no-repeat;
+}
+
+.image-tag {
+  margin-right: 20px;
 }
 
                 /* nav */
@@ -221,23 +239,63 @@ input:checked + .slide-container .nav label {
 }
 
 
-/* BIKES */
+                /* BIKES */
 .bikes {
+  min-height: 725px;
   padding: 0 120px;
-  
 }
 
-.bikes__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+                /* radio-box */
+.radio-box {
+  margin-top: -34px;
 }
 
+.radio-box > .radio-input {
+  display: none;
+}
+
+.radio-box > .radio-label {
+  float: right;
+  opacity: 70%;
+  line-height: 28px;
+  line-height: 28px;
+}
+
+.radio-box > .radio-label:not(:first-of-type) {
+  margin-right: 40px;
+}
+
+.radio-box > .radio-input:checked + .radio-label {
+  opacity: 1;
+  color: #151515;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+                /* div */
+.tabs {
+  clear: both;
+}
+
+.tabs > .product-list {
+  position: absolute;
+  max-width: 1200px;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+#tab-nav-1:checked ~ .tabs > .product-list:nth-of-type(1),
+#tab-nav-2:checked ~ .tabs > .product-list:nth-of-type(2),
+#tab-nav-3:checked ~ .tabs > .product-list:nth-of-type(3) {
+opacity: 1;
+}
+
+                /* ul */
 .product-list {
   display: flex;
   gap: 30px;
   width: 100%;
-  margin-top: 115px;
+  margin-top: 123px;
 }
 
 .product-link {
@@ -248,44 +306,29 @@ input:checked + .slide-container .nav label {
 
 .product-card {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 380px;
   height: 380px;
+  margin-bottom: 22px;
   border-radius: 20px;
   background-color: white;
-  margin-bottom: 22px;
 }
+
 .product-image {
   display: block;
   width: 340px;
   height: 340px;
   mix-blend-mode: hard-light;
 }
+
 .product-name {
+  margin-left: 8px;
   font-weight: 600;
   line-height: 22px;
-  margin-left: 8px;
 }
 
-.category-box {
-  display: flex;
-  gap: 40px;
-  margin-top: 23px;
-}
-
-.category-box input{
-  display: none;
-}
-
-.category {
-  line-height: 28px;
-  opacity: 70%;
-  font-weight: 400;
-}
-
-.category:hover {
-  font-weight: 600;
-  opacity: 100%;
+                /* состояния */
+.radio-box > .radio-label:hover {
   cursor: pointer;
 }
