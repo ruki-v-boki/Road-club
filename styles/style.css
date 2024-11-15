@@ -332,3 +332,50 @@ opacity: 1;
 .radio-box > .radio-label:hover {
   cursor: pointer;
 }
+
+
+                /* TRAININGS */
+.trainings {
+  display: flex;
+  justify-content: space-between;
+  padding: 90px 120px 120px;
+}
+
+.trainings__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 44px;
+  max-width: 410px;
+}
+
+.trainings_text {
+  min-width: 450px;
+  margin-top: -140px;
+}
+
+                /* links */
+.trainings__links-box {
+  display: flex;
+  justify-self: end;
+  gap: 30px;
+  padding-bottom: 2px;
+}
+
+.trainings__link {
+  color: currentColor;
+  font-weight: 600;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+                /* image */
+.trainings__image-box {
+  width: 580px;
+  height: 460px;
+}
+
+                /* состояния */
+.trainings__link:hover {
+  opacity: 75%;
+}
