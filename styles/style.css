@@ -1,3 +1,4 @@
+
                 /* общие стили */
 .section__title {
   padding-top: 3px;
@@ -12,10 +13,17 @@
   line-height: 28px;
 }
 
+.image-box-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 
 
-/* HEADER */
+
+                /* HEADER */
 .header {
   display: flex;
   justify-content: flex-end;
@@ -59,13 +67,17 @@
   margin: 60px 30px 0 120px;
 }
 
+                /* button */
 .more-detailed-button {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: center;
   width: 180px;
   margin-top: 10px;
   border-radius: 4px;
   padding: 16px 10px;
+  overflow: hidden;
   color: #fff;
   font-weight: 600;
   font-size: 14px;
@@ -75,28 +87,71 @@
   background-color: #24B47E;
 }
 
+                /* link */
 .product-link_hero {
+  display: flex;
   margin-top: 124px;
   color: currentColor;
   text-decoration: none;
+}
+
+.product-link_hero::after {
+  content: "";
+  display: block;
+  flex-direction: column;
+  width: 132px;
+  margin-top: 10px;
+  margin-left: 30px;
+  border-top: 2px solid #D7D4D4;
 }
 
                 /* image-box */
 .hero__image-box {
   width: 610px;
   height: 836px;
+  padding-bottom: 80px;
+  background-image: url(../images/hero-cover.jpg);
 }
 
-.image-box-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+.product-card_hero {
+  position: sticky;
+  top: 440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 440px;
+  height: 300px;
+  margin-left: -200px;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: -40px 40px 300px 0 rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
 }
 
                 /* состояния */
 .more-detailed-button:hover {
+  z-index: 2;
+  color: #fff;
+}
+
+.more-detailed-button:hover::before {
+  color: #fff;
+  transform: scaleX(1);
+}
+
+.more-detailed-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  z-index: -1;
+  width: 150%;
+  height: 100%;
+  color: #fff;
   background-color: #319E75;
+  transition: transform 1s;
+  transform: scaleX(0);
+  transform-origin: left;
 }
 
 
@@ -244,7 +299,7 @@
 
                 /* состояния */
 .list-input:checked + .slide-container .slide {
-  transform: scale(1);
+  transform: scaleX(1);
 }
 
 .list-input:checked + .slide-container .nav .list-label { 
@@ -314,14 +369,14 @@
   height: 380px;
   margin-bottom: 22px;
   border-radius: 20px;
-  background-color: white;
+  box-shadow: 0 20px 140px  rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
 }
 
 .product-image {
   display: block;
   width: 340px;
   height: 340px;
-  mix-blend-mode: hard-light;
 }
 
 .product-name {
@@ -357,6 +412,7 @@ opacity: 1;
   justify-content: space-between;
   padding: 90px 120px 120px;
 }
+
                 /* content */
 .trainings__content {
   display: flex;
