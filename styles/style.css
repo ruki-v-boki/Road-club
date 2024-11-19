@@ -1,5 +1,4 @@
-
-                /* общие стили */
+                /* common styles */
 .section__title {
   padding-top: 3px;
   font-weight: 700;
@@ -117,16 +116,20 @@
 .product-card_hero {
   position: sticky;
   top: 440px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 440px;
   height: 300px;
   margin-left: -200px;
   border-radius: 20px;
-  padding: 40px;
   box-shadow: -20px 60px 220px 0 rgba(0, 0, 0, 0.2);
   background-color: #f4f4f4;
+}
+
+.product-card_hero-link {
+  width: 440px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
                 /* состояния */
@@ -217,7 +220,7 @@
 }
 
 .slides-list .list-input {
-  display: none;
+  visibility: hidden;
 }
 
                 /* slide */
@@ -275,7 +278,6 @@
   position: absolute;
   bottom: -105px;
   z-index: 9;
-  display: none;
   cursor: pointer;
 }
 
@@ -309,11 +311,11 @@
   opacity: 60%;
 }
 
-.list-input:checked + .slide-container .slide {
+.list-input:checked + .slide {
   transform: scaleX(1);
 }
 
-.list-input:checked + .slide-container .nav .list-label { 
+.list-input:checked + .nav .list-label { 
   display: block; 
 }
 
