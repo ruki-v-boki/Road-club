@@ -44,7 +44,7 @@
   text-decoration: none;
 }
 
-                /* состояния */
+                /* status */
 .header__list-link:hover {
   opacity: 75%;
 }
@@ -125,14 +125,14 @@
 }
 
 .product-card_hero-link {
-  width: 440px;
-  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 440px;
+  height: 300px;
 }
 
-                /* состояния */
+                /* status */
 .more-detailed-button:hover {
   z-index: 2;
   color: #fff;
@@ -214,43 +214,69 @@
   padding-left: 120px;
 }
 
-                /* ul */
-.slides-list {
+                /* carousel */
+.carousel-wrapper {
   position: relative;
+  /* height: 800px; */
 }
 
-.slides-list .list-input {
-  visibility: hidden;
+#highway, #gravel, #tt {
+  display: none;
+}
+
+*:target ~ .highway {
+  opacity: 0;
+}
+
+#highway:target ~ .highway {
+  opacity: 1;
+}
+
+#gravel:target ~ .gravel,
+#tt:target ~ .tt {
+  z-index: 3;
+  opacity: 1;
+}
+
+.carousel-item {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.highway {
+  z-index: 2;
+  opacity: 1;
 }
 
                 /* slide */
-.slide {
+.carousel-slide {
   position: absolute;
   top: 0;
   display: block;
-  transform: scale(0);
 }
 
-.slide__content {
+.carousel-slide__content {
   display: flex;
   flex-direction: column;
   gap: 50px;
   max-width: 450px;
 }
 
-.slider_text {
+.carousel-slide__text {
   margin-top: -6px;
 }
 
               /* image */
-.slide__image-box {
+.carousel-slide__image-box {
   position: relative;
   display: flex;
   gap: 40px;
   margin-top: 83px;
 }
 
-.slide__image {
+.carousel-slide__image {
   width: 650px;
   height: 400px;
 }
@@ -273,50 +299,41 @@
   margin-right: 20px;
 }
 
-                /* nav */
-.nav .list-label {
+                /* nav-arrow */
+.arrow {
   position: absolute;
-  bottom: -105px;
-  z-index: 9;
-  cursor: pointer;
+  bottom: -100px;
+  display: block;
+  width: 50px;
+  height: 50px;
 }
 
-.prev {
-  left: -5px;
+.arrow-prev {
+  left: 0;
 }
 
-.next {
+.arrow-next {
   left: 70px;
+  transform: rotate(180deg);
 }
 
-.nav-icon_prev {
+.arrow__icon {
   width: 50px;
   height: 50px;
   border: none;
   border-radius: 50%;
-  padding: 17px 19px;
+  padding: 16px;
+  padding-right: 20px;
   background-color: var(--var-arrow-background);
 }
 
-.nav-icon_prev path {
+.arrow__icon path {
   stroke: var(--var-body-font-color);
 }
 
-.nav-icon_next {
-  transform: rotate(180deg);
-}
-
-                /* состояния */
-.nav-icon_prev:hover {
+                /* status */
+.arrow__icon:hover {
   opacity: 60%;
-}
-
-.list-input:checked + .slide {
-  transform: scaleX(1);
-}
-
-.list-input:checked + .nav .list-label { 
-  display: block; 
 }
 
 
@@ -324,8 +341,10 @@
 
                 /* BIKES */
 .bikes {
-  min-height: 725px;
+  min-height: 724px;
   padding: 0 120px;
+  display: flex;
+  flex-direction: column;
 }
 
                 /* radio-box */
@@ -345,7 +364,7 @@
 }
 
 .radio-box > .radio-label:not(:first-of-type) {
-  margin-right: 40px;
+  margin-right: 42px;
 }
 
                 /* div */
@@ -398,7 +417,7 @@
   line-height: 22px;
 }
 
-                /* состояния */
+                /* status */
 .radio-box > .radio-label:hover {
   cursor: pointer;
 }
@@ -444,7 +463,7 @@ opacity: 1;
   display: flex;
   justify-self: end;
   gap: 30px;
-  padding-bottom: 2px;
+  padding-bottom: 4px;
 }
 
 .trainings__link {
@@ -460,7 +479,7 @@ opacity: 1;
   height: 460px;
 }
 
-                /* состояния */
+                /* status */
 .trainings__link:hover {
   opacity: 75%;
 }
@@ -515,7 +534,7 @@ opacity: 1;
   display: none;
 }
 
-                /* состояния */
+                /* status */
 .form__textfield-box:hover {
   cursor: pointer;
 }
@@ -641,7 +660,6 @@ opacity: 1;
   fill: var(--var-footer-icon-color);
 }
 
-                /* состояния */
 .theme-switcher__span::before {
   content: "";
   position: absolute;
@@ -666,6 +684,7 @@ opacity: 1;
   transition: left .5s;
 }
 
+                /* status */
 .theme-switcher__input:checked + .theme-switcher__span::after {
   left: 22px;
 }

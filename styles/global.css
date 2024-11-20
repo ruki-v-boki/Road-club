@@ -10,13 +10,13 @@ h1,h2,h3,h4,h5, ul, p, blockquote{
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
     width: 1440px;
     margin: 0 auto;
-    background-color: var(--var-body-background);
     color: var(--var-body-font-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: var(--var-body-background);
 }
 
 ul {
