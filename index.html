@@ -186,72 +186,20 @@
         <!-- BIKES -->
         <section  class="bikes"  id="bikes">
             <h2  class="section__title">Велосипеды</h2>
-            <div  class="radio-box">
-                <input  class="radio-input"  type="radio"  name="tabs"  id="tab-nav-1">
-                <label  class="radio-label"  for="tab-nav-1">ТТ</label>
 
-                <input  class="radio-input"  type="radio"  name="tabs"  id="tab-nav-2">
-                <label  class="radio-label"  for="tab-nav-2">Грэвел</label>
-
-                <input  class="radio-input"  type="radio"  name="tabs"  id="tab-nav-3"  checked>
-                <label  class="radio-label"  for="tab-nav-3">Шоссе</label>
-
-                <div  class="tabs">
-                   
-                    <ul  class="product-list">
-                        <li>
-                            <a  class="product-link"  href="#0">
-                                <div  class="product-card">
-                                    <img  src="./images/TTSpecialized-S-Works-Shiv.png"  alt="велосипед"  class="product-image">
-                                </div>
-                                <p  class="product-name">Specialized S-Works Shiv</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a  class="product-link"  href="#">
-                                <div  class="product-card">
-                                    <img  src="./images/TTBMC-Timemachine-01-ONE.png"  alt="велосипед"  class="product-image">
-                                </div>
-                                <p  class="product-name">BMC Timemachine 01 ONE</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a  class="product-link"  href="#">
-                                <div  class="product-card">
-                                    <img  src="./images/TTCervelo-P-Series.png"  alt="велосипед"  class="product-image">
-                                </div>
-                                <p  class="product-name">Cervelo P-Series</p>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                    <ul  class="product-list">
-                        <li>
-                            <a  class="product-link"  href="#">
-                                <div  class="product-card">
-                                    <img  src="./images/GRVLCervelo-Aspero-GRX-810.png"  alt="велосипед"  class="product-image">
-                                </div>
-                                <p  class="product-name">Cervelo Aspero GRX 810</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a  class="product-link"  href="#">
-                                <div  class="product-card">
-                                    <img  src="./images/GRVLSpecialized-S-Works-Diverge.png"  alt="велосипед"  class="product-image">
-                                </div>
-                                <p  class="product-name">Specialized S-Works Diverge</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a  class="product-link"  href="#">
-                                <div  class="product-card">
-                                    <img  src="./images//GRVLCannondale-Topstone-Lefty-3.png"  alt="велосипед"  class="product-image">
-                                </div>
-                                <p  class="product-name">Cannondale Topstone Lefty 3</p>
-                            </a>
-                        </li>
-                    </ul>
-                    
+            <input  class="bikes-input"  type="radio"  name="slider"  id="category-highway"  checked>
+            <input  class="bikes-input"  type="radio"  name="slider"  id="category-gravel">
+            <input  class="bikes-input"  type="radio"  name="slider"  id="category-tt">
+                
+            <nav  class="navigation-box">
+                <label  for="category-highway"  class="category  category-highway">Шоссе</label>
+                <label  for="category-gravel"  class="category  category-gravel">Грэвел</label>
+                <label  for="category-tt"  class="category  category-tt">ТТ</label>
+            </nav>
+                
+            <section  class="shop-box">
+                <!-- 1 -->
+                <article  class="content content-1">
                     <ul  class="product-list">
                         <li>
                             <a  class="product-link"  href="#">
@@ -278,9 +226,67 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-                
-            </div>
+                </article>
+                <!-- 2 -->
+                <article  class="content content-2">
+                    <ul  class="product-list">
+                        <li>
+                            <a  class="product-link"  href="#">
+                                <div  class="product-card">
+                                    <img  src="./images/GRVLCervelo-Aspero-GRX-810.png"  alt="велосипед"  class="product-image">
+                                </div>
+                                <p  class="product-name">Cervelo Aspero GRX 810</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a  class="product-link"  href="#">
+                                <div  class="product-card">
+                                    <img  src="./images/GRVLSpecialized-S-Works-Diverge.png"  alt="велосипед"  class="product-image">
+                                </div>
+                                <p  class="product-name">Specialized S-Works Diverge</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a  class="product-link"  href="#">
+                                <div  class="product-card">
+                                    <img  src="./images//GRVLCannondale-Topstone-Lefty-3.png"  alt="велосипед"  class="product-image">
+                                </div>
+                                <p  class="product-name">Cannondale Topstone Lefty 3</p>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+                <!-- 3 -->
+                <article  class="content content-3">
+                    <ul  class="product-list">
+                        <li>
+                            <a  class="product-link"  href="#0">
+                                <div  class="product-card">
+                                    <img  src="./images/TTSpecialized-S-Works-Shiv.png"  alt="велосипед"  class="product-image">
+                                </div>
+                                <p  class="product-name">Specialized S-Works Shiv</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a  class="product-link"  href="#">
+                                <div  class="product-card">
+                                    <img  src="./images/TTBMC-Timemachine-01-ONE.png"  alt="велосипед"  class="product-image">
+                                </div>
+                                <p  class="product-name">BMC Timemachine 01 ONE</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a  class="product-link"  href="#">
+                                <div  class="product-card">
+                                    <img  src="./images/TTCervelo-P-Series.png"  alt="велосипед"  class="product-image">
+                                </div>
+                                <p  class="product-name">Cervelo P-Series</p>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+            </section><!-- shop-box -->
 
         </section>
 
