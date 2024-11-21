@@ -26,20 +26,20 @@
         <!-- HERO  -->
         <section  class="hero">
 
-            <div  class="hero__content">
-                <h1  class="hero__title  section-title">Шоссе, ТТ <br>и Грэвел</h1>
-                <p  class="hero__text  section-text">Триатлонные старты, горные серпантины или грейвел 
+            <article  class="hero__content">
+                <h1  class="section-title">Шоссе, ТТ <br>и Грэвел</h1>
+                <p  class="section-text">Триатлонные старты, горные серпантины или грейвел 
                     заезды по живописным маршрутам – нужно только определиться 
                     с выбором велосипеда и отправиться в путь.
                 </p>
                 <a  href="#"  class="more-detailed-button">Подробнее</a>
-                <a  href="#"  class="product__link_hero">Cannondale Systemsix</a>
-            </div>
+                <a  href="#"  class="hero__link">Cannondale Systemsix</a>
+            </article>
 
             <div  class="hero__image-box">
                 
-                <div  class="product__card_hero">
-                    <a href="#"  class="product__card_hero-link">
+                <div  class="hero__card">
+                    <a href="#"  class="hero__card-link">
                         <img  src="./images/bike-fix.png"  alt="велосипед">
                     </a>
                 </div>
@@ -83,14 +83,14 @@
                 <div  class="carousel-item  highway">
 
                     <article  class="carousel-slide">
-                        <div  class="carousel-slide__content">
+                        <article  class="carousel-slide__content">
                             <h2  class="section-title">Шоссе</h2>
                             <p  class="carousel-slide__text  section-text">На шоссейном велосипеде можно ездить по асфальту 
                                 на разных градиентах: будь то горы или равнины. 
                                 Гонки проходят в командном пелотоне, но тренироваться можно и 
                                 самостоятельно.
                             </p>
-                        </div>
+                        </article>
                         <!-- image -->
                         <div  class="carousel-slide__image-box">
                             <img  class="carousel-slide__image"  src="./images/highway-img__1.jpg"  alt="шоссе в горах">
@@ -118,14 +118,14 @@
                 <div  class="carousel-item  gravel">
 
                     <article  class="carousel-slide">
-                        <div  class="carousel-slide__content">
+                        <article  class="carousel-slide__content">
                             <h2  class="section-title">Грэвел</h2>
                             <p  class="carousel-slide__text  section-text">Грэвел похож на шоссейный велосипед, 
                                 но конструкция рамы немного отличается, и на нём стоят 
                                 более широкие покрышки, всё для того чтобы проехать по 
                                 лёгкому бездорожью.
                             </p>
-                        </div>
+                        </article>
                         <!-- image -->
                         <div  class="carousel-slide__image-box">
                             <img  class="carousel-slide__image"  src="./images/grvl-img__1.jpg"  alt="легкое бездорожье">
@@ -153,13 +153,13 @@
                 <div  class="carousel-item  tt">
 
                     <article  class="carousel-slide">
-                        <div  class="carousel-slide__content">
+                        <article  class="carousel-slide__content">
                             <h2  class="section-title">ТТ</h2>
                             <p  class="carousel-slide__text  section-text">ТТ — это велосипед для триатлона или 
                                 раздельного старта, гооняют на таком велике только по 
                                 равнинному асфальту, велик очень быстрые и аэродинамичный.
                             </p>
-                        </div>
+                        </article>
                         <!-- image -->
                         <div  class="carousel-slide__image-box">
                             <img  class="carousel-slide__image"  src="./images/TT-img__1.jpg"  alt="равнинный асфальт">
@@ -188,21 +188,21 @@
 
         <!-- BIKES -->
         <section  class="bikes"  id="bikes">
-            <h2  class="bikes__title  section-title">Велосипеды</h2>
+            <h2  class="section-title">Велосипеды</h2>
 
             <input  class="bikes__input"  type="radio"  name="slider"  id="category_highway"  checked>
             <input  class="bikes__input"  type="radio"  name="slider"  id="category_gravel">
             <input  class="bikes__input"  type="radio"  name="slider"  id="category_tt">
                 
             <nav  class="navigation-box">
-                <label  for="category_highway"  class="category  category_highway">Шоссе</label>
-                <label  for="category_gravel"  class="category  category_gravel">Грэвел</label>
-                <label  for="category_tt"  class="category  category_tt">ТТ</label>
+                <label  for="category_highway"  class="category-label  category-label_highway">Шоссе</label>
+                <label  for="category_gravel"  class="category-label  category-label_gravel">Грэвел</label>
+                <label  for="category_tt"  class="category-label  category-label_tt">ТТ</label>
             </nav>
                 
-            <div  class="product  product-box">
+            <div  class="product">
                 <!-- 1 -->
-                <article  class="content  content_highway">
+                <article  class="product__content  product__content_highway">
                     <ul  class="product__list">
                         <li>
                             <a  class="product__link"  href="#">
@@ -231,7 +231,7 @@
                     </ul>
                 </article>
                 <!-- 2 -->
-                <article  class="content  content_gravel">
+                <article  class="product__content  product__content_gravel">
                     <ul  class="product__list">
                         <li>
                             <a  class="product__link"  href="#">
@@ -260,7 +260,7 @@
                     </ul>
                 </article>
                 <!-- 3 -->
-                <article  class="content  content_tt">
+                <article  class="product__content  product__content_tt">
                     <ul  class="product__list">
                         <li>
                             <a  class="product__link"  href="#0">
@@ -298,7 +298,7 @@
         <section  class="trainings"  id="trainings">
 
             <div  class="trainings__content">
-                <h2  class="trainings__title  section-title">Тренировки</h2>
+                <h2  class="section-title">Тренировки</h2>
                 <p  class="trainings__text  section-text">Чтобы найти маршрут для тренировки можно 
                     воспользоваться сервисом Komoot, а записать эти тренировки 
                     поможет приложение Strava, а также это приложение позволит 
@@ -358,16 +358,16 @@
         </div><!--footer__bottom-box-->
 
     </footer>
-<script>
-    const handleChange = (isCheked) => {
-        if (isCheked) {
-            document.body.setAttribute('dark', '');
-            document.body.removeAttribute('light', '');
-        } else {
-            document.body.removeAttribute('dark');
-            document.body.setAttribute('light', '');
+    <script>
+        const handleChange = (isCheked) => {
+            if (isCheked) {
+                document.body.setAttribute('dark', '');
+                document.body.removeAttribute('light', '');
+            } else {
+                document.body.removeAttribute('dark');
+                document.body.setAttribute('light', '');
+            }
         }
-    }
-</script>
+    </script>
 </body>
 </html>
