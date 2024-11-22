@@ -227,7 +227,6 @@
         /* carousel */
 .carousel-wrapper {
   position: relative;
-  /* height: 800px; */
 }
 
 #highway, #gravel, #tt {
@@ -352,12 +351,6 @@
   padding: 0 120px;
 }
 
-.bikes__input {
-  display: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
 .navigation-box {
   position: relative;
   display: flex;
@@ -375,6 +368,11 @@
   line-height: 50px;
   line-height: 28px;
   cursor: pointer;
+}
+
+        /* product */
+.product {
+  padding: 124px 0 120px;
 }
 
 .product__content {
@@ -431,15 +429,12 @@
 #category_tt:checked ~ .navigation-box .category-label_tt {
   opacity: 75%;
   font-weight: 600;
-  -webkit-appearance: none;
-  appearance: none;
 }
 
 #category_highway:checked ~ .product .product__content_highway,
 #category_gravel:checked ~ .product .product__content_gravel,
 #category_tt:checked ~ .product .product__content_tt {
   display: flex;
-  padding: 124px 0 120px;
 }
 
 
@@ -637,7 +632,7 @@
 }
 
         /* theme */
-.theme-switcher-box {
+.theme-switcher {
   position: relative;
   display: flex;
   align-items: center;
@@ -649,7 +644,7 @@
   display: inline-block;
 }
 
-.theme-switcher__input{
+.theme-switcher__input {
   opacity: 0;
   appearance: none;
 }
@@ -663,19 +658,19 @@
 }
 
         /* icons */
-.theme-switcher-box__icon_light {
+.theme-switcher__icon_light {
   margin-right: 59px;
 }
 
-.theme-switcher-box__icon_light path {
+.theme-switcher__icon_light path {
   fill: var(--var-footer-icon-color);
 }
 
-.theme-switcher-box__icon_dark {
+.theme-switcher__icon_dark {
   margin-left: 22px;
 }
 
-.theme-switcher-box__icon_dark path {
+.theme-switcher__icon_dark path {
   fill: var(--var-footer-icon-color);
 }
 
